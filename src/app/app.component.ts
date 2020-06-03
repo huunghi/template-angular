@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-template';
+  isSticky: boolean = false;
+  display: boolean = false;
+  @HostListener('window:scroll', ['$event'])
+  checkScroll() {
+    this.isSticky = window.pageYOffset >= 14 * 8;
+  }
+  onOpen(value) {
+    console.log(value);
+    this.display = value;
+  }
 }

@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "./styles/base/all";
+@import "./styles/modules/all";
+@import "./styles/layout/all";
+@import "./styles/state/all";
+@import "./styles/pages/all";

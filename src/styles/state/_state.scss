@@ -1,0 +1,15 @@
+.sticky {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  animation-name: transitionToBottom;
+  animation-duration: 1.5s;
+  background-color: rgba($black,0.5);
+}
+.div {
+  height: 300px;
+}
+.flex-center {
+  @include flexCenter;
+}

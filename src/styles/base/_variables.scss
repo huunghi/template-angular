@@ -1,0 +1,14 @@
+// == Breakpoints ===
+$breakpoints: (
+  small: 480px,
+  medium: 768px,
+  wide: 960px,
+  large: 1024px,
+  largest: 1280px
+);
+
+// Colors
+$black:#000;
+$header-large-color: #f2f6ff;
+$header-large-active-color: #5789ff;
+$header-small-active-color: #168;

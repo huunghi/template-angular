@@ -1,0 +1,27 @@
+<header class="header" [class.sticky]="isSticky">
+  <div class="container">
+    <nav class="navbar navbar-expand-md" [class.navbar-large]="isSticky">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" width="100" alt="logo">
+      </a>
+      <button type="text" (click)="openDrawer()" pButton icon="pi pi-align-justify" class="d-md-none ui-button-secondary">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <a class="nav-link" routerLink="/">Trang chủ </a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/introduce">Giới thiệu</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/products">Sản phẩm</a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link" routerLink="/contact">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
