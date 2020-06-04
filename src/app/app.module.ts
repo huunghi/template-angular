@@ -22,7 +22,7 @@ import { SidebarModule } from 'primeng/sidebar';
     NotFoundComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: 'angular-template' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
